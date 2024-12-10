@@ -1,0 +1,37 @@
+﻿<Page x:Class="_18.AddEditRequestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_18"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditRequestPage">
+
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="ФИО" Grid.Row="0" FontFamily="Book Antiqua" FontSize="18" TextAlignment="Center"/>
+            <TextBlock Text="Номер Телефона" Grid.Row="1" FontFamily="Book Antiqua" FontSize="18" TextAlignment="Center"/>
+            <TextBlock Text="Дата" Grid.Row="2" FontFamily="Book Antiqua" FontSize="18" TextAlignment="Center"/>
+            <TextBlock Text="Заявка" Grid.Row="3" FontFamily="Book Antiqua" FontSize="18" TextAlignment="Center"/>
+
+            <TextBox Name="FullNameTB" Grid.Row="0" Grid.Column="1" Margin="54,5,54,5" FontFamily="Book Antiqua" FontSize="24" TextAlignment="Center" Text="{Binding fio}"/>
+            <TextBox Name="PhoneTB" Grid.Row="1" Grid.Column="1" Margin="54,5,54,5" FontFamily="Book Antiqua" FontSize="24" TextAlignment="Center" Text="{Binding phone}"/>
+            <TextBox Name="StreetTB" Grid.Row="2" Grid.Column="1" Margin="54,5,54,5" FontFamily="Book Antiqua" FontSize="24" TextAlignment="Center" Text="{Binding RequestData}"/>
+            <TextBox Name="DataRequestTB" Grid.Row="3" Grid.Column="1" Margin="54,5,54,5" FontFamily="Book Antiqua" FontSize="24" TextAlignment="Center" Text="{Binding homeTechType}"/>
+
+            <Button Content="Сохранить" Grid.Row="8" Grid.ColumnSpan="2"  Name="Save" Click="SaveButtons"  FontFamily="Book Antiqua" FontSize="16" Margin="237,0,238,10"/>
+        </Grid>
+    </Grid>
+</Page>

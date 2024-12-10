@@ -1,0 +1,24 @@
+﻿<Window x:Class="_18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="620"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="AntiqueWhite"></StackPanel>
+        <!--Buttons-->
+        <Button Width="160" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Content="Заявки" FontSize="16" Click="Button_Click"/>
+        <Button Width="160" Height="40" Margin="10,60,10,300" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Изделия" FontSize="16" Click="Button_Click_1"/>
+        <Button Width="160" Height="40" Margin="0,345,0,0" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Выход" FontSize="16" Click="QuitClick"/>
+        <!--Label-->
+        <Label Width="160" Height="40" Content="Mастерская" Margin="10,394,10,0" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Opacity="0.5"></Label>
+        <!--Frame-->
+        <Frame Grid.Column="1" x:Name="RequestFrame"></Frame>
+    </Grid>
+</Window>
